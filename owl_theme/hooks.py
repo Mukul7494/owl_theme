@@ -26,9 +26,12 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/owl_theme/css/owl_theme.css"
+app_include_css = "/assets/owl_theme/css/custom.css"
 app_include_js = [
     "owl_theme.bundle.js",
+    # "./ui/custom_navbar.js",
     ]
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/owl_theme/css/owl_theme.css"

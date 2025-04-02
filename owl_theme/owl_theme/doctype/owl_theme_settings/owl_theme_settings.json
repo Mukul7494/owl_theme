@@ -1,213 +1,226 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2025-01-16 16:07:11.478713",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "buttons_section",
-  "primary_buttons_background_color",
-  "secondary_buttons_background_color",
-  "column_break_ojph",
-  "primary_buttons_text_color",
-  "secondary_buttons_text_color",
-  "website_settings_section",
-  "app_name",
-  "app_name_color",
-  "background_color",
-  "column_break_awya",
-  "app_logo",
-  "background_image",
-  "app_settings_section",
-  "splash_image",
-  "favicon",
-  "main_page_background_color",
-  "main_page_card_container_background_color",
-  "cards_background_color",
-  "cards_title_text_color",
-  "cards_text_color",
-  "column_break_hkcn",
-  "navbar_background_color",
-  "navbar_text_color",
-  "sidebar_background_color",
-  "sidebar_text_color",
-  "list_page_background_color",
-  "form_background_color"
- ],
- "fields": [
-  {
-   "fieldname": "app_logo",
-   "fieldtype": "Attach Image",
-   "label": "App Logo"
-  },
-  {
-   "description": "this will override the #Background Color Property",
-   "fieldname": "background_image",
-   "fieldtype": "Attach Image",
-   "label": "Background Image"
-  },
-  {
-   "fieldname": "primary_buttons_background_color",
-   "fieldtype": "Color",
-   "label": "Primary Buttons Background Color"
-  },
-  {
-   "fieldname": "secondary_buttons_background_color",
-   "fieldtype": "Color",
-   "label": "Secondary Buttons Background Color"
-  },
-  {
-   "fieldname": "app_name",
-   "fieldtype": "Data",
-   "label": "App Name"
-  },
-  {
-   "fieldname": "background_color",
-   "fieldtype": "Color",
-   "label": "Background Color"
-  },
-  {
-   "fieldname": "website_settings_section",
-   "fieldtype": "Section Break",
-   "label": "Website Settings"
-  },
-  {
-   "fieldname": "app_settings_section",
-   "fieldtype": "Section Break",
-   "label": "App Settings"
-  },
-  {
-   "fieldname": "column_break_hkcn",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "navbar_background_color",
-   "fieldtype": "Color",
-   "label": "Navbar Background Color"
-  },
-  {
-   "fieldname": "navbar_text_color",
-   "fieldtype": "Color",
-   "label": "Navbar Text Color"
-  },
-  {
-   "fieldname": "sidebar_background_color",
-   "fieldtype": "Color",
-   "label": "Sidebar Background Color"
-  },
-  {
-   "fieldname": "sidebar_text_color",
-   "fieldtype": "Color",
-   "label": "Sidebar Text Color"
-  },
-  {
-   "fieldname": "app_name_color",
-   "fieldtype": "Color",
-   "label": "App Name Color"
-  },
-  {
-   "description": "An icon file with .ico extension. Should be 16 x 16 px. Generated using a favicon generator. [favicon-generator.org]",
-   "fieldname": "favicon",
-   "fieldtype": "Attach Image",
-   "label": "FavIcon"
-  },
-  {
-   "fieldname": "splash_image",
-   "fieldtype": "Attach Image",
-   "label": "Splash Image"
-  },
-  {
-   "fieldname": "main_page_background_color",
-   "fieldtype": "Color",
-   "label": "Workspace Background Color"
-  },
-  {
-   "fieldname": "main_page_card_container_background_color",
-   "fieldtype": "Color",
-   "label": "Card Container Background Color"
-  },
-  {
-   "fieldname": "cards_background_color",
-   "fieldtype": "Color",
-   "label": "Cards Background Color"
-  },
-  {
-   "fieldname": "cards_text_color",
-   "fieldtype": "Color",
-   "label": "Cards Text Color"
-  },
-  {
-   "fieldname": "cards_title_text_color",
-   "fieldtype": "Color",
-   "label": "Cards Title Text Color"
-  },
-  {
-   "fieldname": "buttons_section",
-   "fieldtype": "Section Break",
-   "label": "Buttons"
-  },
-  {
-   "fieldname": "column_break_awya",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_ojph",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "primary_buttons_text_color",
-   "fieldtype": "Color",
-   "label": "Primary Buttons Text Color"
-  },
-  {
-   "fieldname": "secondary_buttons_text_color",
-   "fieldtype": "Color",
-   "label": "Secondary Buttons Text Color"
-  },
-  {
-   "description": "change background color for form view page",
-   "fieldname": "form_background_color",
-   "fieldtype": "Color",
-   "label": "Form Background Color"
-  },
-  {
-   "description": "change background color for list view page",
-   "fieldname": "list_page_background_color",
-   "fieldtype": "Color",
-   "label": "List Page Background Color"
-  }
- ],
- "hide_toolbar": 1,
- "index_web_pages_for_search": 1,
- "issingle": 1,
- "links": [],
- "make_attachments_public": 1,
- "modified": "2025-02-16 08:56:30.114016",
- "modified_by": "Administrator",
- "module": "Owl Theme",
- "name": "Owl Theme Settings",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "role": "System Manager",
-   "select": 1,
-   "share": 1,
-   "write": 1
-  },
-  {
-   "read": 1,
-   "role": "All"
-  }
- ],
- "sort_field": "creation",
- "sort_order": "DESC",
- "states": [],
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2025-01-16 16:07:11.478713",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "prebuilt_themes",
+        "buttons_section",
+        "primary_buttons_background_color",
+        "secondary_buttons_background_color",
+        "column_break_ojph",
+        "primary_buttons_text_color",
+        "secondary_buttons_text_color",
+        "website_settings_section",
+        "app_name",
+        "app_name_color",
+        "background_color",
+        "column_break_awya",
+        "app_logo",
+        "background_image",
+        "app_settings_section",
+        "splash_image",
+        "favicon",
+        "main_page_background_color",
+        "main_page_card_container_background_color",
+        "cards_background_color",
+        "cards_title_text_color",
+        "cards_border_and_title_background_color",
+        "cards_text_color",
+        "column_break_hkcn",
+        "navbar_background_color",
+        "navbar_text_color",
+        "sidebar_background_color",
+        "sidebar_text_color",
+        "list_page_background_color",
+        "form_background_color"
+    ],
+    "fields": [
+        {
+            "fieldname": "prebuilt_themes",
+            "fieldtype": "Select",
+            "label": "Prebuilt Themes",
+            "options": "\nBlue Theme\nGreen Theme\nCustom\n"
+        },
+        {
+            "fieldname": "app_logo",
+            "fieldtype": "Attach Image",
+            "label": "App Logo"
+        },
+        {
+            "description": "this will override the #Background Color Property",
+            "fieldname": "background_image",
+            "fieldtype": "Attach Image",
+            "label": "Background Image"
+        },
+        {
+            "fieldname": "primary_buttons_background_color",
+            "fieldtype": "Color",
+            "label": "Primary Buttons Background Color"
+        },
+        {
+            "fieldname": "secondary_buttons_background_color",
+            "fieldtype": "Color",
+            "label": "Secondary Buttons Background Color"
+        },
+        {
+            "fieldname": "app_name",
+            "fieldtype": "Data",
+            "label": "App Name"
+        },
+        {
+            "fieldname": "background_color",
+            "fieldtype": "Color",
+            "label": "Background Color"
+        },
+        {
+            "fieldname": "website_settings_section",
+            "fieldtype": "Section Break",
+            "label": "Website Settings"
+        },
+        {
+            "fieldname": "app_settings_section",
+            "fieldtype": "Section Break",
+            "label": "App Settings"
+        },
+        {
+            "fieldname": "column_break_hkcn",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "navbar_background_color",
+            "fieldtype": "Color",
+            "label": "Navbar Background Color"
+        },
+        {
+            "fieldname": "navbar_text_color",
+            "fieldtype": "Color",
+            "label": "Navbar Text Color"
+        },
+        {
+            "fieldname": "sidebar_background_color",
+            "fieldtype": "Color",
+            "label": "Sidebar Background Color"
+        },
+        {
+            "fieldname": "sidebar_text_color",
+            "fieldtype": "Color",
+            "label": "Sidebar Text Color"
+        },
+        {
+            "fieldname": "app_name_color",
+            "fieldtype": "Color",
+            "label": "App Name Color"
+        },
+        {
+            "description": "An icon file with .ico extension. Should be 16 x 16 px. Generated using a favicon generator. [favicon-generator.org]",
+            "fieldname": "favicon",
+            "fieldtype": "Attach Image",
+            "label": "FavIcon"
+        },
+        {
+            "fieldname": "splash_image",
+            "fieldtype": "Attach Image",
+            "label": "Splash Image"
+        },
+        {
+            "fieldname": "main_page_background_color",
+            "fieldtype": "Color",
+            "label": "Workspace Background Color"
+        },
+        {
+            "fieldname": "main_page_card_container_background_color",
+            "fieldtype": "Color",
+            "label": "Card Container Background Color"
+        },
+        {
+            "fieldname": "cards_background_color",
+            "fieldtype": "Color",
+            "label": "Cards Background Color"
+        },
+        {
+            "fieldname": "cards_text_color",
+            "fieldtype": "Color",
+            "label": "Cards Text Color"
+        },
+        {
+            "fieldname": "cards_border_and_title_background_color",
+            "fieldtype": "Color",
+            "label": "Cards Border and Title Background Color"
+        },
+        {
+            "fieldname": "cards_title_text_color",
+            "fieldtype": "Color",
+            "label": "Cards Title Text Color"
+        },
+        {
+            "fieldname": "buttons_section",
+            "fieldtype": "Section Break",
+            "label": "Buttons"
+        },
+        {
+            "fieldname": "column_break_awya",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "column_break_ojph",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "primary_buttons_text_color",
+            "fieldtype": "Color",
+            "label": "Primary Buttons Text Color"
+        },
+        {
+            "fieldname": "secondary_buttons_text_color",
+            "fieldtype": "Color",
+            "label": "Secondary Buttons Text Color"
+        },
+        {
+            "description": "change background color for form view page",
+            "fieldname": "form_background_color",
+            "fieldtype": "Color",
+            "label": "Form Background Color"
+        },
+        {
+            "description": "change background color for list view page",
+            "fieldname": "list_page_background_color",
+            "fieldtype": "Color",
+            "label": "List Page Background Color"
+        }
+    ],
+    "hide_toolbar": 1,
+    "index_web_pages_for_search": 1,
+    "issingle": 1,
+    "links": [],
+    "make_attachments_public": 1,
+    "modified": "2025-02-16 08:56:30.114016",
+    "modified_by": "Administrator",
+    "module": "Owl Theme",
+    "name": "Owl Theme Settings",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "print": 1,
+            "read": 1,
+            "role": "System Manager",
+            "select": 1,
+            "share": 1,
+            "write": 1
+        },
+        {
+            "read": 1,
+            "role": "All"
+        }
+    ],
+    "sort_field": "creation",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1,
+    "track_seen": 1,
+    "track_views": 1
 }
