@@ -7,16 +7,6 @@
 	color: white !important;
 }
 
-#Collapsable {
-	width: 0; /* Start width as 0 */
-	overflow: hidden;
-	transition: width 0.3s ease-in-out; /* Animate width change */
-}
-
-#Collapsable.show {
-	width: 15%; /* Expand to 25% width */
-}
-
 .anchor-style {
 	display: flex;
 	flex-direction: column;

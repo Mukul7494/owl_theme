@@ -15,18 +15,7 @@ const observer = new MutationObserver((mutations, obs) => {
 			applySidebarStyles(sidebar, doc.sidebar_background_color);
 			applyIconStyles(doc.sidebar_text_color);
 			applyItemStyles(items, doc.sidebar_text_color);
-			configureItemAnchors();
-
-			const nestedContainers = document.querySelectorAll(
-				"[item-name='Accounting'] > .nested-container"
-			);
-
-			if (nestedContainers.length) {
-				const content = Array.from(nestedContainers, (item) => item.innerHTML).join("");
-				addCollapsibleSidebar(content);
-
-				nestedContainers.forEach((item) => (item.hidden = true));
-			}
+			initCollapsibleSidebars();
 		})
 		.catch((error) => console.error("❌ Error fetching theme settings:", error));
 
@@ -34,24 +23,48 @@ const observer = new MutationObserver((mutations, obs) => {
 	obs.disconnect();
 });
 
-
-
 //function starts here
 
-// Function to Add Collapsible Sidebar
-function addCollapsibleSidebar(content) {
-	const collapsibleSidebar = `<div class="collapse" id="Collapsable">${content}</div>`;
-	document
-		.querySelector(".layout-side-section")
-		.insertAdjacentHTML("afterend", collapsibleSidebar);
+function initCollapsibleSidebars() {
+	const nestedContainers = Array.from(
+		document.querySelectorAll(".nested-container:not([data-title])")
+	).filter((container) => container.children.length > 0);
+
+	// Create an accordion wrapper
+	const accordionWrapper = document.createElement("div");
+	accordionWrapper.id = "accordionWrapper";
+	accordionWrapper.classList.add("p-3");
+	document.querySelector(".layout-side-section").after(accordionWrapper);
+
+	const dropIcons = Array.from(document.querySelectorAll(".drop-icon:not(.hidden)"));
+
+	nestedContainers.forEach((container, index) => {
+		const id = `Collapsible-${index}`;
+		const content = container.innerHTML;
+
+		addCollapsibleSidebar(content, id, accordionWrapper);
+
+		const dropIcon = dropIcons[index];
+		if (dropIcon) {
+			Object.assign(dropIcon.dataset, {
+				toggle: "collapse",
+				target: `#${id}`,
+				parent: "#accordionWrapper",
+			});
+			dropIcon.setAttribute("aria-controls", id);
+		}
+
+		container.hidden = true;
+	});
 }
 
-// Function to Configure Item Anchors for Collapsible Sidebar
-function configureItemAnchors() {
-	document.querySelectorAll("[item-name='Accounting'] .drop-icon").forEach((btn) => {
-		Object.assign(btn.dataset, { toggle: "collapse", target: "#Collapsable" });
-		btn.setAttribute("aria-controls", "Collapsable");
-	});
+function addCollapsibleSidebar(content, id, wrapper) {
+	const collapsibleSidebar = `
+		<div class="collapse collapse-horizontal" id="${id}" data-bs-parent="#accordionWrapper">
+			${content}
+		</div>
+	`;
+	wrapper.insertAdjacentHTML("beforeend", collapsibleSidebar);
 }
 
 // Function to Apply Styles to Items
@@ -64,7 +77,7 @@ function applyItemStyles(items, textColor) {
 function applyIconStyles(color) {
 	const icon = $(".icon");
 	replaceClass(icon, "icon-md", "icon-lg");
-	icon.css({ fill: color });
+	// icon.css({ fill: color });
 }
 
 // Function to Apply Styles to Sidebar
