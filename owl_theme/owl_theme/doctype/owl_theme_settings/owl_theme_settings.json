@@ -41,7 +41,7 @@
             "fieldname": "prebuilt_themes",
             "fieldtype": "Select",
             "label": "Prebuilt Themes",
-            "options": "\nBlue Theme\nGreen Theme\nCustom\n"
+            "options": "\nBlue Theme\nGreen Theme\nRed Theme\nPurple Theme\nOrange Theme\nYellow Theme\n"
         },
         {
             "fieldname": "app_logo",

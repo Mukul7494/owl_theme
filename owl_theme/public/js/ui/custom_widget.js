@@ -26,7 +26,7 @@ frappe.widget.widget_factory.base.prototype.make_widget = function () {
 				this.title_field.css("color", doc.cards_title_text_color);
 
 				$(".shortcut-widget-box").css({
-					"box-shadow": "0px 4px 6px rgba(0, 0, 0, 0.3)",
+					"box-shadow": "0px 4px 2px rgba(0, 0, 0, 0.3)",
 					padding: "16px 9px",
 					border: `1px solid ${doc.cards_border_and_title_background_color}`,
 					"border-radius": "8px",
